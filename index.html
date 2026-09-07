@@ -58,6 +58,7 @@ h1 em:after{content:"";position:absolute;left:0;right:0;bottom:6px;height:12px;b
 .lead{font-size:17px;color:#3e4759;max-width:600px;margin:0}
 .ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
 .hero-note{font-size:12px;color:var(--muted);margin-top:14px}
+.hero-mini{display:none}
 .hero-visual{position:relative}
 .hero-photo{border-radius:28px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3.3;background:linear-gradient(135deg,#1b3d94,#4a7bf0)}
 .hero-photo img{width:100%;height:100%;object-fit:cover}
@@ -373,6 +374,10 @@ footer .logo-mark{background:rgba(255,255,255,.12)}
   .nav{height:62px}
   .nav-right .btn{display:none}
   .ctas .btn{width:100%}
+  .hero-visual{display:none}
+  .hero-mini{display:block;float:right;width:34%;aspect-ratio:1;object-fit:cover;border-radius:18px;margin:0 0 0 12px;box-shadow:var(--shadow)}
+  .hero-text .lead{clear:both}
+  .hero-text h1{margin-top:18px;font-size:30px;letter-spacing:-.04em;line-height:1.28}
   .stats{grid-template-columns:1fr 1fr}
   .stat{padding:18px}.stat strong{font-size:26px}
   .form-grid,.admin,.steps,.support{grid-template-columns:1fr}
@@ -413,7 +418,8 @@ footer .logo-mark{background:rgba(255,255,255,.12)}
 <section class="hero">
   <div class="container">
     <div class="hero-grid">
-      <div>
+      <div class="hero-text">
+        <img class="hero-mini" src="images/hero.jpg" alt="" aria-hidden="true">
         <div class="eyebrow"><i></i>採用ご担当者さま向け</div>
         <h1>会社説明会を、<br><em>24時間365日</em><br>ひらいたままに。</h1>
         <p class="lead">説明会の日程が合わない学生を、取りこぼしていませんか。動画3本・合計8分の説明会をオンラインに置き、視聴からアンケート・エントリーまでを自動でつなげます。担当者が同じ説明を繰り返す時間は、もう必要ありません。</p>
@@ -688,7 +694,7 @@ footer .logo-mark{background:rgba(255,255,255,.12)}
     </div>
     <div class="price-hero rv">
       <div class="big">月額2<span>万円</span></div>
-      <p>月額のシステム利用料は、全プラン共通で月額2万円です。初期費用はプランと撮影内容により異なり、お打ち合わせ後にお見積りします。2年目以降は、月額に加えてシステム年次更新費がかかります。</p>
+      <p>月額のシステム利用料は、全プラン共通で月額2万円です。初期費用はプランと撮影内容により異なり、お打ち合わせ後にお見積りします。2年目以降は、月額に加えてシステム年次更新費がかかります。<br><small>すでに動画をお持ちの場合は、動画制作なしの「初期費用150,000円＋月額2万円」でご利用いただけます（税別）。</small></p>
     </div>
     <div class="plans">
       <div class="plan rv">
@@ -891,7 +897,7 @@ footer .logo-mark{background:rgba(255,255,255,.12)}
     <div class="faq rv">
       <details><summary>動画や会社説明の素材がなくても導入できますか？</summary><p>はい。動画をお持ちでない状態からのスタートを想定して設計しています。ヒアリングから台本を起こし、撮影日1日で3本分を収録します。</p></details>
       <details><summary>どのくらいの期間で導入できますか？</summary><p>お打ち合わせから公開まで、1〜2か月が目安です。既存の動画があれば短縮できます。採用シーズンから逆算して組みますので、希望時期をお聞かせください。</p></details>
-      <details><summary>料金は月額2万円だけですか？</summary><p>月額2万円はシステム利用料です。初期費用として、動画制作費と専用環境の構築・初期設定・操作レクチャーの費用が別途かかります。金額はプランにより異なります。</p></details>
+      <details><summary>料金は月額2万円だけですか？</summary><p>月額2万円はシステム利用料です。初期費用として、動画制作費と専用環境の構築・初期設定・操作レクチャーの費用が別途かかります。金額はプランにより異なります。すでに動画をお持ちの場合は、動画制作なしの初期費用150,000円（税別）＋月額2万円でご利用いただけます。</p></details>
       <details><summary>採用人数が少ない会社でも利用できますか？</summary><p>はい。採用規模よりも「説明会対応の負担を減らしたい」「学生との接点を増やしたい」という目的に合わせてご提案します。年間1〜2名の採用規模でも無理なくお使いいただける設計です。</p></details>
       <details><summary>社員が話すのに慣れていません。撮影は大丈夫でしょうか？</summary><p>インタビュー形式で、こちらの質問に答えていただく形で進めます。原稿の暗記は不要です。言い直しはいくらでもできますので、ご安心ください。</p></details>
       <details><summary>対面の説明会は、なくさないといけませんか？</summary><p>いいえ。オンライン説明会を「入口」にし、熱量の高い学生だけを対面の座談会や面談に呼ぶ、という併用をおすすめしています。</p></details>
