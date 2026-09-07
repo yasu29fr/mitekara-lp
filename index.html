@@ -172,12 +172,6 @@ h3{font-weight:800}
 .shot-frame .fbar span{margin-left:8px;font-size:11px;color:var(--muted);font-weight:700}
 .shot-frame img{display:block;width:100%}
 .banner-note{font-size:11px;color:rgba(255,255,255,.75)!important;margin:10px 0 0;text-align:center}
-.doc-mock{background:#fff;color:var(--ink);border-radius:14px;padding:22px;box-shadow:0 30px 60px rgba(0,0,0,.3);transform:rotate(-2deg)}
-.doc-mock .dl{height:10px;border-radius:5px;background:#e6ebf5;margin:10px 0}
-.doc-mock .dl.s{width:60%}.doc-mock .dl.o{background:var(--orange);width:40%}
-.doc-mock strong{font-size:14px}
-.doc-mock .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:14px}
-.doc-mock .grid div{height:54px;border-radius:8px;background:var(--navy-soft)}
 
 /* tables */
 .table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:var(--shadow-sm)}
@@ -244,30 +238,6 @@ td.ng:before{content:"△";color:#b0b7c4;margin-right:8px}
 .admin{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
 .admin .card{padding:26px 24px}
 .admin .card h3{font-size:17px}
-.dash{margin-top:40px;background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);overflow:hidden}
-.dash-top{display:flex;align-items:center;gap:8px;padding:12px 18px;background:#f4f7f6;border-bottom:1px solid #dae2e0}
-.dash-top i{width:10px;height:10px;border-radius:50%;background:#d5dbe7}
-.dash-top i:first-child{background:#ff6b6b}.dash-top i:nth-child(2){background:#ffc85c}.dash-top i:nth-child(3){background:#5ad17b}
-.dash-top span{margin-left:10px;font-size:12px;color:var(--muted);font-family:Inter,sans-serif}
-.mock-note{margin-left:auto!important;font-family:"Noto Sans JP",sans-serif!important;font-weight:700}
-.dash-body{display:grid;grid-template-columns:200px 1fr}
-.dash-side{background:#1f5c4c;color:rgba(255,255,255,.75);padding:22px 18px;font-size:13px}
-.dash-side div{padding:9px 12px;border-radius:8px;margin-bottom:4px}
-.dash-side div.on{background:#2e7c67;color:#fff;font-weight:700}
-.dash-main{padding:26px}
-.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px}
-.kpi{background:#e2eee9;border-radius:12px;padding:14px 16px}
-.kpi small{font-size:11px;color:var(--muted);font-weight:700}
-.kpi b{display:block;font-size:24px;color:#1f5c4c;font-family:Inter,sans-serif}
-.kpi em{font-style:normal;font-size:11px;color:#1d8a4b;font-weight:800}
-.rows{border:1px solid var(--line);border-radius:12px;overflow:hidden}
-.row{display:grid;grid-template-columns:1.2fr 1fr .8fr 1fr;gap:10px;padding:12px 16px;font-size:13px;border-bottom:1px solid var(--line);align-items:center}
-.row:last-child{border-bottom:0}
-.row.h{background:#f4f7f6;font-weight:800;font-size:11px;color:#5d6a66;letter-spacing:.06em}
-.row .st{font-size:11px;font-weight:800;padding:3px 9px;border-radius:999px;display:inline-block}
-.st.hot{background:#1f5c4c;color:#fff}
-.st.new{background:#e6f7ec;color:#1d8a4b}
-.st.mid{background:#e2eee9;color:#1f5c4c}
 
 /* steps */
 .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;position:relative}
@@ -392,8 +362,6 @@ footer .logo-mark{background:rgba(255,255,255,.12)}
   .reason{grid-template-columns:1fr;gap:28px}
   .reason.flip .reason-text{order:0}
   .support{grid-template-columns:1fr 1fr}
-  .dash-body{grid-template-columns:1fr}.dash-side{display:none}
-  .kpis{grid-template-columns:1fr 1fr}
   .nav-links{display:none}
   .banner{padding:44px 28px}
   .float-card.a{left:8px;bottom:16px}.float-card.b{right:8px;top:12px}
@@ -407,15 +375,13 @@ footer .logo-mark{background:rgba(255,255,255,.12)}
   .ctas .btn{width:100%}
   .stats{grid-template-columns:1fr 1fr}
   .stat{padding:18px}.stat strong{font-size:26px}
-  .form-grid,.admin,.steps,.kpis,.support{grid-template-columns:1fr}
+  .form-grid,.admin,.steps,.support{grid-template-columns:1fr}
   .full{grid-column:auto}
   .contact-box{padding:24px}
   .total-bar{flex-direction:column;align-items:flex-start}
   .bar{width:100%;max-width:none}
   .mobile-cta{display:block}
   body{padding-bottom:74px}
-  .row{grid-template-columns:1fr 1fr 1fr;gap:6px}
-  .row .c3{display:none}
 }
 </style>
 </head>
