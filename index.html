@@ -164,10 +164,12 @@ h3{font-weight:800}
 .banner .ctas{margin-top:28px}
 .banner-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
 .shot-frame{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.35)}
-.shot-frame .bar{display:flex;align-items:center;gap:6px;padding:9px 12px;background:#f1f4fa;border-bottom:1px solid #e3e8f0}
-.shot-frame .bar i{width:9px;height:9px;border-radius:50%;background:#d5dbe7}
-.shot-frame .bar i:first-child{background:#ff6b6b}.shot-frame .bar i:nth-child(2){background:#ffc85c}.shot-frame .bar i:nth-child(3){background:#5ad17b}
-.shot-frame .bar span{margin-left:8px;font-size:11px;color:var(--muted);font-weight:700}
+.dash-shot{margin-top:40px}
+.dash-shot .shot-frame{box-shadow:var(--shadow);border:1px solid var(--line)}
+.shot-frame .fbar{display:flex;align-items:center;gap:6px;padding:9px 12px;background:#f1f4fa;border-bottom:1px solid #e3e8f0}
+.shot-frame .fbar i{width:9px;height:9px;flex:0 0 9px;border-radius:50%;background:#d5dbe7}
+.shot-frame .fbar i:first-child{background:#ff6b6b}.shot-frame .fbar i:nth-child(2){background:#ffc85c}.shot-frame .fbar i:nth-child(3){background:#5ad17b}
+.shot-frame .fbar span{margin-left:8px;font-size:11px;color:var(--muted);font-weight:700}
 .shot-frame img{display:block;width:100%}
 .banner-note{font-size:11px;color:rgba(255,255,255,.75)!important;margin:10px 0 0;text-align:center}
 .doc-mock{background:#fff;color:var(--ink);border-radius:14px;padding:22px;box-shadow:0 30px 60px rgba(0,0,0,.3);transform:rotate(-2deg)}
@@ -676,7 +678,7 @@ footer .logo-mark{background:rgba(255,255,255,.12)}
           </div>
         </div>
         <div class="banner-shot">
-          <div class="shot-frame"><div class="bar"><i></i><i></i><i></i><span>採用担当者が見る管理画面（ダッシュボード）</span></div><img src="images/screen-dashboard.jpg" alt="採用担当者が見る管理画面のダッシュボード" loading="lazy"></div>
+          <div class="shot-frame"><div class="fbar"><i></i><i></i><i></i><span>採用担当者が見る管理画面（ダッシュボード）</span></div><img src="images/screen-dashboard.jpg" alt="採用担当者が見る管理画面のダッシュボード" loading="lazy"></div>
           <p class="banner-note">※表示データはサンプルです</p>
         </div>
       </div>
@@ -823,28 +825,9 @@ footer .logo-mark{background:rgba(255,255,255,.12)}
       <div class="card rv"><div class="card-num">03</div><h3>CSV出力</h3><p>候補者の一覧を、絞り込んだ状態のまま CSV で書き出せます。社内共有や、他システムへの取り込みに使えます。</p></div>
       <div class="card rv"><div class="card-num">04</div><h3>画面の設定</h3><p>動画のタイトル・説明文・サムネイル、会社名・ロゴ・背景画像、外部リンク、配色、通知先、管理者アカウントは管理画面から変更できます。</p></div>
     </div>
-    <div class="dash rv" aria-label="管理画面イメージ（画面はイメージです）">
-      <div class="dash-top"><i></i><i></i><i></i><span>admin / 候補者一覧</span><span class="mock-note">※画面はイメージです（配色は初期設定の緑。管理画面から6色に変更できます）</span></div>
-      <div class="dash-body">
-        <div class="dash-side">
-          <div class="on">候補者一覧</div><div>動画・ページ設定</div><div>会社情報・配色</div><div>通知設定</div><div>管理者アカウント</div>
-        </div>
-        <div class="dash-main">
-          <div class="kpis">
-            <div class="kpi"><small>今月の登録</small><b>128</b></div>
-            <div class="kpi"><small>視聴完了率</small><b>84%</b></div>
-            <div class="kpi"><small>アンケート回答</small><b>97</b></div>
-            <div class="kpi"><small>エントリー</small><b>41</b></div>
-          </div>
-          <div class="rows">
-            <div class="row h"><div>氏名 / 学校</div><div>いまの状態</div><div class="c3">再生時間</div><div class="c4">志望度（本人回答）</div></div>
-            <div class="row"><div><b>佐藤 ◯◯</b><br><span style="color:var(--muted)">◯◯大学 経済学部</span></div><div>エントリー済</div><div class="c3">8:00 / 8:00</div><div class="c4"><span class="st hot">ぜひ応募したい</span></div></div>
-            <div class="row"><div><b>田中 ◯◯</b><br><span style="color:var(--muted)">◯◯大学 工学部</span></div><div>全視聴完了・エントリー未</div><div class="c3">7:40 / 8:00</div><div class="c4"><span class="st mid">応募を検討したい</span></div></div>
-            <div class="row"><div><b>鈴木 ◯◯</b><br><span style="color:var(--muted)">◯◯大学 文学部</span></div><div>アンケート①未回答</div><div class="c3">2:00 / 8:00</div><div class="c4">—</div></div>
-            <div class="row"><div><b>高橋 ◯◯</b><br><span style="color:var(--muted)">◯◯短期大学</span></div><div>動画①未視聴</div><div class="c3">0:00 / 8:00</div><div class="c4">—</div></div>
-          </div>
-        </div>
-      </div>
+    <div class="dash-shot rv">
+      <div class="shot-frame"><div class="fbar"><i></i><i></i><i></i><span>admin / ダッシュボード</span></div><img src="images/screen-dashboard.jpg" alt="採用担当者が見る管理画面のダッシュボード。登録者数・視聴完了・エントリーの集計と離脱ファネル" loading="lazy"></div>
+      <p class="shot-note">※表示データはサンプルです。配色は初期設定のもので、管理画面から6色に変更できます。</p>
     </div>
   </div>
 </section>
