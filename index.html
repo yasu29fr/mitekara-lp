@@ -159,10 +159,17 @@ h3{font-weight:800}
 .banner:after{content:"";position:absolute;left:-80px;bottom:-160px;width:320px;height:320px;border-radius:50%;background:rgba(255,255,255,.06)}
 .banner>*{position:relative;z-index:1}
 .banner .kicker{color:#ffc07a}
-.banner h2{color:#fff;font-size:clamp(24px,3vw,34px)}
+.banner h2{color:#fff;font-size:clamp(22px,2.5vw,30px)}
 .banner p{color:rgba(255,255,255,.82);max-width:720px}
 .banner .ctas{margin-top:28px}
-.banner-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.banner-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+.shot-frame{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.35)}
+.shot-frame .bar{display:flex;align-items:center;gap:6px;padding:9px 12px;background:#f1f4fa;border-bottom:1px solid #e3e8f0}
+.shot-frame .bar i{width:9px;height:9px;border-radius:50%;background:#d5dbe7}
+.shot-frame .bar i:first-child{background:#ff6b6b}.shot-frame .bar i:nth-child(2){background:#ffc85c}.shot-frame .bar i:nth-child(3){background:#5ad17b}
+.shot-frame .bar span{margin-left:8px;font-size:11px;color:var(--muted);font-weight:700}
+.shot-frame img{display:block;width:100%}
+.banner-note{font-size:11px;color:rgba(255,255,255,.75)!important;margin:10px 0 0;text-align:center}
 .doc-mock{background:#fff;color:var(--ink);border-radius:14px;padding:22px;box-shadow:0 30px 60px rgba(0,0,0,.3);transform:rotate(-2deg)}
 .doc-mock .dl{height:10px;border-radius:5px;background:#e6ebf5;margin:10px 0}
 .doc-mock .dl.s{width:60%}.doc-mock .dl.o{background:var(--orange);width:40%}
@@ -662,17 +669,15 @@ footer .logo-mark{background:rgba(255,255,255,.12)}
         <div>
           <span class="kicker en">DOWNLOAD</span>
           <h2><span style="display:inline-block">画面イメージと料金の考え方を、</span><span style="display:inline-block">資料にまとめています。</span></h2>
-          <p>学生が見る画面、採用担当者が見る管理画面、料金プランの違い、導入までのスケジュール。このページの内容を、社内で共有しやすい形にしました。</p>
+          <p>学生が見る視聴画面、採用担当者が見る管理画面、料金プランの違い、導入までのスケジュール。このページの内容を、社内で共有しやすい形にまとめました。</p>
           <div class="ctas">
             <a class="btn btn-primary" href="#contact">資料を請求する（無料）<span class="cta-tag">比較資料付き</span></a>
             <a class="btn btn-ghost" href="#contact">導入について相談する</a>
           </div>
         </div>
-        <div class="doc-mock" aria-hidden="true">
-          <small style="display:block;font-size:11px;color:var(--muted);font-weight:700;margin-bottom:6px">※画面はイメージです</small>
-          <div class="dl o"></div><div class="dl"></div><div class="dl s"></div>
-          <div class="grid"><div></div><div></div><div></div></div>
-          <div class="dl" style="margin-top:14px"></div><div class="dl s"></div>
+        <div class="banner-shot">
+          <div class="shot-frame"><div class="bar"><i></i><i></i><i></i><span>採用担当者が見る管理画面（ダッシュボード）</span></div><img src="images/screen-dashboard.jpg" alt="採用担当者が見る管理画面のダッシュボード" loading="lazy"></div>
+          <p class="banner-note">※表示データはサンプルです</p>
         </div>
       </div>
     </div>
